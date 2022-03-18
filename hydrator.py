@@ -1,18 +1,30 @@
+import datetime
 import time
 
-#get current system time
-t = time.localtime()
-current_time = time.strftime("%H:%M:%S", t)
-print(current_time)
+from playsound import playsound
 
-current_hour = int(current_time [0:2]) #get the current hour
-print("current_hour - ", current_hour)
 
-start_hour = 8
-increment = 1
+def notify():
+    print(f"{datetime.datetime.now().strftime('%Y/%m/%d %H:%m')}: Time to drink")
+    play_notification()
 
-current_dif = current_hour - start_hour
-print(current_dif)
 
-if current_dif >= 0:
-    print("drink up")
+def play_notification():
+    playsound("./ienba_notification.wav")
+
+
+print("""
+    Hydrator Copyright (C) 2022 Binula Kavisinghe, Tarith Jayasooriya
+    This program comes with ABSOLUTELY NO WARRANTY.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions;
+    
+    This software uses "Notification" by IENB ( https://freesound.org/people/IENBA/sounds/545495/ ) from freesound licensed under CCBY3.0
+
+    You will hear a tone in every hour
+""")
+play_notification()
+
+while True:
+    time.sleep(60*60)
+    notify()
