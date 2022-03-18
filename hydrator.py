@@ -24,5 +24,5 @@ print("""
 play_notification()
 
 while True:
-    time.sleep(5)
+    time.sleep(60*60)
     notify()
