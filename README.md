@@ -18,3 +18,6 @@ pip install playsound
 
 # Running
 Run the file `hydrator.py`
+
+# Run on Startup
+* Please follow these instructions to [run the script on startup](https://gist.github.com/Binula-Kavisinghe/dbe19095c3e841bc4e978ec1ccd6aed9)
