@@ -17,7 +17,7 @@ pip install playsound
 2. Extract it to a preferred location.
 
 
-# Running
+# Running the Program
 Run the file `hydrator.py`
 
 # Run on Startup
