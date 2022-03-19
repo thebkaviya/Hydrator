@@ -6,6 +6,7 @@ A python program than reminds you to take a drink once an hour, while at work on
 1. Python 3 (https://www.python.org/)
 2. Playsound module (https://pypi.org/project/playsound/)
 
+_Run the below command in a cmd window AFTER installing python._
 ```bash
 pip install playsound
 ```
