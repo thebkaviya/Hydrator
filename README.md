@@ -12,6 +12,7 @@ pip install playsound
 # Installation
 
 1. Download the code as a zip file.
+![image](Download.png)
 2. Extract it to a preferred location.
 
 
