@@ -1,5 +1,3 @@
-
-from curses import window
 import datetime
 import time
 from tkinter import *
