@@ -1,9 +1,16 @@
 import datetime
 import time
-from tkinter import *
+import PySimpleGUI as sg
 from playsound import playsound
 
-reminder = f"{datetime.datetime.now().strftime('%Y/%m/%d %H:%m')}: Time to drink"
+sg.theme('Topanga')
+
+now = f"""
+
+{datetime.datetime.now().strftime('%Y/%m/%d %H:%m')}: Time to drink water...      
+    
+
+"""
 startup_message = """
     Hydrator Copyright (C) 2022 Binula Kavisinghe, Tarith Jayasooriya
     This program comes with ABSOLUTELY NO WARRANTY.
@@ -12,30 +19,26 @@ startup_message = """
     
     This software uses "Notification" by IENB ( https://freesound.org/people/IENBA/sounds/545495/ ) from freesound licensed under CCBY3.0
 
-    You will hear a tone in every hour
-"""
-
-def GUI_Window(text):
-    window = Tk()
-    window.title("Hydrator (C) 2022")
-    window.configure(width=500, height=300)
-    window.configure(bg='lightgray')
-    text = Label(text)
-    text.place(x=250,y=150)
-    window.mainloop()
-    time.sleep(5)
-    window.quit()
+    You will hear a tone and see a popup in every hour.
+    """
 
 def play_notification():
     playsound("./ienba_notification.wav")
 
-def notify(text):
+def notify():
+    sg.popup_timed(now, title = "Hydrator", auto_close_duration = 10, keep_on_top = True, font = ["Calibri",20], non_blocking = True)
     play_notification()
-    GUI_Window(text)
-    
-play_notification()
-GUI_Window(startup_message)
+
+def startup_window():
+    play_notification()
+    layout = [  [sg.Text(startup_message)], 
+                [sg.Button('Ok')] ]
+    window = sg.Window('Hydrator (C) 2022', layout,)
+    window.read()
+    window.close()
+
+startup_window()
 
 while True:
-    time.sleep(60*60)
-    notify()
+    if datetime.datetime.now().strftime("%M:%S") == "00:00":
+        notify()
