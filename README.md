@@ -1,24 +1,38 @@
 # Hydrator
 A python program than reminds you to take a drink once an hour, while at work on your computer.
 
-# Prerequisites
+## Pre requisites
 
-1. Python 3 (https://www.python.org/)
+1. Python 3 (https://www.python.org/downloads/)
 2. Playsound module (https://pypi.org/project/playsound/)
+3. PySimpleGUI package (https://pypi.org/project/PySimpleGUI/)
+
 
 _Run the below command in a cmd window AFTER installing python._
 ```bash
-pip install playsound
+pip install playsound PySimpleGUI tk
 ```
-# Installation
 
-1. Download the code as a zip file.
-![image](Download.png)
-2. Extract it to a preferred location.
+* Make sure to check these two boxes at the bottom when installing python.
+
+![image](https://user-images.githubusercontent.com/81571678/185636515-8e2bff00-9898-42ef-ac3a-2fb7b6ae6e9e.png)
 
 
-# Running the Program
+## Installation
+
+1. Click on `Releases`
+
+![image](https://user-images.githubusercontent.com/81571678/185641454-05275f9c-2493-45df-9bf0-ff851b70b327.png)
+
+2. Scroll to the bottom and download the zip file.
+
+![image](https://user-images.githubusercontent.com/81571678/185648909-eabd88e3-1e03-4fac-91af-a9914b300961.png)
+
+3. Extract it to a preferred location.
+
+
+## Running the Program
 Run the file `hydrator.py`
 
-# Run on Startup
-* Please follow these instructions to [run the script on startup](https://gist.github.com/Binula-Kavisinghe/dbe19095c3e841bc4e978ec1ccd6aed9)
+## Run on Startup
+* Please follow these instructions to [run the script on startup for windows](https://gist.github.com/thebkaviya/dbe19095c3e841bc4e978ec1ccd6aed9)
