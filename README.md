@@ -3,7 +3,7 @@ A python program than reminds you to take a drink once an hour, while at work on
 
 ## Pre requisites
 
-1. Python 3 (https://www.python.org/)
+1. Python 3 (https://www.python.org/downloads/)
 2. Playsound module (https://pypi.org/project/playsound/)
 3. PySimpleGUI package (https://pypi.org/project/PySimpleGUI/)
 
