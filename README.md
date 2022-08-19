@@ -22,7 +22,7 @@ pip install playsound PySimpleGUI tk
 
 1. Click on `Releases`
 
-![image](https://user-images.githubusercontent.com/81571678/185641454-05275f9c-2493-45df-9bf0-ff851b70b327.png)
+![image](https://user-images.githubusercontent.com/81571678/185656585-8ae496c2-fbb4-4b5e-bab9-84b109d20606.png)
 
 2. Download the source code zip file.
 
