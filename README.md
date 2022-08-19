@@ -8,10 +8,9 @@ A python program than reminds you to take a drink once an hour, while at work on
 3. PySimpleGUI package (https://pypi.org/project/PySimpleGUI/)
 
 
-_Run the below commands on after the other in a cmd window AFTER installing python._
+_Run the below commands in a cmd window AFTER installing python._
 ```bash
-pip install playsound
-pip install PySimpleGUI
+pip install playsound PySimpleGUI tk
 ```
 ## Installation
 
