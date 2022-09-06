@@ -20,6 +20,8 @@ startup_message = """
     This software uses "Notification" by IENB ( https://freesound.org/people/IENBA/sounds/545495/ ) from freesound licensed under CCBY3.0
 
     You will hear a tone and see a popup every hour.
+
+    Click OK to continue...
     """
 
 def play_notification():
